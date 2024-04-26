@@ -1,0 +1,2 @@
+g++ task4.cpp -o task4
+./task4 < nums.txt
