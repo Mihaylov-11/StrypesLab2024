@@ -1,0 +1,19 @@
+touch swap.h
+
+g++ -E program.cpp -o program.i
+g++ -S program.i -o program.s
+g++ -c program.s -o program.o
+
+ghex program.i
+ghex program.s
+ghex program.o
+
+g++ -E swap.cpp -o swap.i
+g++ -S swap.i -o swap.s
+g++ -c swap.s -o swap.o
+
+ghex swap.i
+ghex swap.s
+ghex swap.o
+
+
